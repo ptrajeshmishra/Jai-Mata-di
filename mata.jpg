@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>जय माता दी - भव्य जागरण 17 Oct 2026</title>
+<link href="https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Hindi&family=Mukta:wght@400;600;800&family=Amita:wght@700&display=swap" rel="stylesheet">
+<style>
+:root{--red:#7a0000;--gold:#FFD700;--maroon:#3a0000;--cream:#FFF8E7}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:radial-gradient(ellipse at center,#4a0000 0%,#1a0000 100%);font-family:'Mukta',sans-serif;overflow:hidden;color:var(--cream);height:100vh;width:100vw}
+#envelope-scene{position:fixed;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;z-index:10;background:radial-gradient(ellipse at bottom,#8B0000,#1a0000);cursor:pointer;transition:.8s}#envelope-scene.hide{opacity:0;transform:scale(1.4);pointer-events:none}
+.envelope-wrapper{position:relative;width:330px;height:230px;margin-top:18px;animation:floatEnv 3s infinite;filter:drop-shadow(0 20px 30px rgba(0,0,0,.7))}@keyframes floatEnv{0%,100%{transform:translateY(0)}50%{transform:translateY(-16px)}}
+.envelope{position:absolute;inset:0;background:linear-gradient(145deg,#f5d89a,#c9a86a);border:2px solid #FFD700;border-radius:0 0 8px 8px;z-index:2}.flap{position:absolute;top:0;left:0;width:100%;height:55%;background:linear-gradient(180deg,#e8c07a,#b78a44);clip-path:polygon(0 0,100% 0,50% 100%);transform-origin:top;transition:.8s;z-index:4;display:flex;align-items:flex-start;justify-content:center;padding-top:16px}.envelope-wrapper.open .flap{transform:rotateX(180deg)}
+.seal{width:62px;height:62px;background:radial-gradient(circle,#FFD700,#b8860b);border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'Amita';font-size:26px;color:#3a0000;border:2px solid #8B0000}
+.pocket-left,.pocket-right{position:absolute;bottom:0;width:50%;height:85%;background:#f5d89a;z-index:3}.pocket-left{left:0;clip-path:polygon(0 15%,100% 85%,0 100%)}.pocket-right{right:0;clip-path:polygon(100% 15%,0 85%,100% 100%)}
+.letter{position:absolute;left:6%;right:6%;bottom:10%;height:85%;background:#FFFDF0;border-radius:6px;z-index:1;padding:10px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;color:#4a0000;transition:.9s .3s}.envelope-wrapper.open .letter{transform:translateY(-110%)}
+.tap-hint{margin-top:26px;display:flex;flex-direction:column;align-items:center;gap:6px;animation:bounce 1.2s infinite;padding:12px 22px;border-radius:30px;background:rgba(0,0,0,.25);border:1px solid rgba(255,215,0,.35)}
+#invitation{position:fixed;inset:0;z-index:5;display:none;opacity:0;background:#FFF8E7;overflow-y:auto}.show{display:block!important;opacity:1!important}.book{max-width:480px;margin:0 auto}.page{min-height:100vh;padding:24px 18px 92px;display:none}.page.active{display:block}
+.mantra{font-family:'Amita';color:#7a0000;text-align:center;font-size:26px}.sub{text-align:center;color:#6b1a1a;font-size:13px;margin-bottom:16px}
+.hero-img-wrap{border-radius:18px;overflow:hidden;border:4px solid #FFD700;margin:14px 0}.hero-img-wrap img{width:100%;display:block}
+.card{background:#fff;border-radius:16px;padding:18px;border:1px solid #f0d9a0;color:#3a1010;margin:14px 0}.card.gold{background:linear-gradient(145deg,#8B0000,#5a0000);color:#FFF8E7;border:2px solid #FFD700}.card.gold h3{color:#FFD700}
+.roop-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}.roop-card{background:#fff;border-radius:14px;overflow:hidden;border:1px solid #e8c07a}.roop-img{height:110px;overflow:hidden}.roop-img img{width:100%;height:100%;object-fit:cover}.roop-info{padding:8px;text-align:center}.roop-name{font-weight:800;font-size:14px;color:#4a0000}.roop-tag{font-size:10px;color:#8a5a2e}.full{grid-column:span 2}.full .roop-img{height:140px}
+.btn-row{position:fixed;bottom:0;left:0;right:0;max-width:480px;margin:0 auto;display:flex;gap:10px;padding:14px 16px;background:linear-gradient(0deg,#FFF8E7 75%,transparent)}.btn{flex:1;padding:13px;border-radius:14px;border:none;font-weight:800}.btn-next{background:#8B0000;color:#FFD700}.btn-prev{background:#fff;color:#8B0000;border:2px solid #e8c07a}
+</style>
+</head>
+<body>
+<div id="envelope-scene" onclick="openInvite()">
+  <h2 style="font-family:'Amita';color:#FFD700">॥ भव्य नवरात्रि ॥</h2>
+  <div class="envelope-wrapper" id="envWrap">
+    <div class="flap"><div class="seal">ॐ</div></div>
+    <div class="envelope"></div><div class="pocket-left"></div><div class="pocket-right"></div>
+    <div class="letter"><h2 style="font-family:'Amita';color:#8B0000">जय माता दी</h2><p style="font-size:12px;color:#4a0000">भव्य दिव्य नवरात्रि जागरण<br>जवाहर पार्क, गांधी नगर<br>कानपुर<br><b>17 अक्टूबर 2026 - रात्रि 10 बजे</b></p></div>
+  </div>
+  <div class="tap-hint"><div style="font-size:36px">👉</div><div style="color:#FFD700;font-weight:800">स्पर्श करके खोलें</div><div style="color:#ffeeb0;font-size:10px">5s me auto open</div></div>
+</div>
+
+<div id="invitation">
+  <div class="book">
+    <div class="page active" data-page="1">
+      <div class="mantra">॥ ॐ सर्वमंगल मांगल्ये ॥</div>
+      <h1 style="text-align:center;color:#8B0000;font-size:27px">माँ भगवती का दिव्य दरबार</h1>
+      <div class="hero-img-wrap"><img src="https://d2d12s4eh5fw2h.cloudfront.net/uploads/2026/03/maamahagauri-1200x630.webp" alt="Mata"></div>
+      <div class="card gold" style="text-align:center"><h3>🌟 भव्य दिव्य आमंत्रण 🌟</h3><p>माँ आदिशक्ति की कृपा से<br><b style="color:#FFD700">भव्य रात्रि जागरण</b> में सपरिवार पधारें</p></div>
+      <div class="card"><b style="color:#8B0000">दिव्य तिथि:</b> 17 अक्टूबर 2026, शनिवार<br><b style="color:#8B0000">भव्य समय:</b> रात्रि 10:00 बजे से<br><b style="color:#8B0000">पावन स्थल:</b> जवाहर पार्क, गांधी नगर, कानपुर</div>
+    </div>
+    <div class="page" data-page="2">
+      <div class="mantra">नवदुर्गा - नौ दिव्य रूप</div>
+      <div class="roop-grid">
+        <div class="roop-card"><div class="roop-img"><img src="https://go4ethnic.blog/wp-content/uploads/2026/01/story-of-maa-shailputri.jpg"></div><div class="roop-info"><div class="roop-name">शैलपुत्री</div></div></div>
+        <div class="roop-card"><div class="roop-img"><img src="https://indianviewer.com/wp-content/uploads/2026/03/brahamcharini.png"></div><div class="roop-info"><div class="roop-name">ब्रह्मचारिणी</div></div></div>
+        <div class="roop-card"><div class="roop-img"><img src="https://www.nayaashafm.com/wp-content/uploads/2025/09/Chandraghanta_Devi_Pic.jpg"></div><div class="roop-info"><div class="roop-name">चंद्रघंटा</div></div></div>
+        <div class="roop-card"><div class="roop-img"><img src="https://newspolar.com/wp-content/uploads/2024/10/Kusmanda-Devi-768x768.jpg"></div><div class="roop-info"><div class="roop-name">कूष्माण्डा</div></div></div>
+        <div class="roop-card"><div class="roop-img"><img src="https://radioshwetashardul.org/wp-content/uploads/2023/10/Skandamata.jpg"></div><div class="roop-info"><div class="roop-name">स्कंदमाता</div></div></div>
+        <div class="roop-card"><div class="roop-img"><img src="https://nidanmedia.com/wp-content/uploads/2025/09/kattyani-mata-1140x570.jpg"></div><div class="roop-info"><div class="roop-name">कात्यायनी</div></div></div>
+        <div class="roop-card"><div class="roop-img"><img src="https://www.top10bhojpuri.com/wp-content/uploads/2025/09/Kalaratri-Form-and-Significance-768x430.jpg"></div><div class="roop-info"><div class="roop-name">कालरात्रि</div></div></div>
+        <div class="roop-card"><div class="roop-img"><img src="https://d2d12s4eh5fw2h.cloudfront.net/uploads/2026/03/maamahagauri-1200x630.webp"></div><div class="roop-info"><div class="roop-name">महागौरी</div></div></div>
+        <div class="roop-card full"><div class="roop-img"><img src="https://blog.shloka.life/wp-content/uploads/2025/08/Siddhidatri-Sadhana-1.webp"></div><div class="roop-info"><div class="roop-name">सिद्धिदात्री</div></div></div>
+      </div>
+    </div>
+    <div class="page" data-page="3">
+      <div class="mantra">पावन स्थल</div>
+      <div class="card"><h3>📍 दिव्य आयोजन स्थल</h3><p style="font-size:18px;font-weight:800;color:#4a0000">जवाहर पार्क, गांधी नगर, कानपुर</p><a href="https://www.google.com/maps/search/Jawahar+Park+Gandhi+Nagar+Kanpur" target="_blank" style="display:block;text-align:center;margin-top:12px;background:#8B0000;color:#FFD700;padding:12px;border-radius:10px;text-decoration:none;font-weight:800">📍 लोकेशन देखें</a></div>
+      <div class="card gold" style="text-align:center"><h3>🙏 विनीत 🙏</h3><p><b>समस्त गांधी नगर परिवार</b></p></div>
+    </div>
+    <div class="page" data-page="4">
+      <div style="text-align:center;padding-top:24px"><div style="font-size:50px">🙏</div><div class="mantra">जय माता दी</div>
+        <div class="hero-img-wrap"><img src="https://d2d12s4eh5fw2h.cloudfront.net/uploads/2026/03/maamahagauri-1200x630.webp"></div>
+        <div class="card gold"><h3>दिव्य आशीर्वाद</h3><p>सर्व बाधा विनिर्मुक्तो धन धान्य सुतान्वितः।<br>मनुष्यो मत्प्रसादेन भविष्यति न संशयः॥</p></div>
+      </div>
+    </div>
+  </div>
+  <div class="btn-row"><button class="btn btn-prev" id="prevBtn">← पिछला</button><button class="btn btn-next" id="nextBtn">अगला →</button></div>
+</div>
+<script>
+let opened=false;function openInvite(){if(opened) return; opened=true; document.getElementById('envWrap').classList.add('open'); setTimeout(()=>{document.getElementById('envelope-scene').classList.add('hide');document.getElementById('invitation').style.display='block';document.getElementById('invitation').classList.add('show');},1000);}
+setTimeout(()=>{if(!opened) openInvite();},5000);
+const invEl=document.getElementById('invitation');let current=1;const total=4;const pages=document.querySelectorAll('.page');
+function showPage(n){if(n<1||n>total) return; pages.forEach(p=>p.classList.remove('active'));document.querySelector('.page[data-page="'+n+'"]').classList.add('active');current=n;invEl.scrollTo({top:0,behavior:'smooth'});}
+document.getElementById('nextBtn').addEventListener('click',()=>{if(current===total) showPage(1); else showPage(current+1);});document.getElementById('prevBtn').addEventListener('click',()=>showPage(current-1));
+showPage(1);
+</script>
+</body>
+</html>
